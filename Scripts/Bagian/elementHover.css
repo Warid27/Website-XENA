@@ -1,0 +1,62 @@
+.element1 h3 {
+	color: red;
+}
+.element2 h3, h2 {
+	color: red;
+}
+.element1:hover ~ .element2 h3 {
+	color: yellow;
+}
+
+
+
+
+.Sign{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+    top: 1.5%;
+    right: 2%;
+    color: #001F3F;
+    font-family: "Poppins";
+    font-weight: bold;
+    font-size: 20px;
+    background: none;
+    opacity: .5;
+    /* transition: all 1s ease; */
+}
+.Sign a{
+    color: #001F3F;
+    font-family: "Poppins";
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+.active{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background: #ffffff;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+    right: 11.5%;
+    top: 1.5%;
+    opacity: 1;
+}
+.active a{
+    color: #001F3F;
+    font-family: "Poppins";
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.Sign a:hover + .active a {
+	color: yellow;
+}

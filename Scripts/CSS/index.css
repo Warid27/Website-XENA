@@ -1,0 +1,259 @@
+*, html, body {
+  margin: 0;
+  padding: 0;
+  max-height: 100vh;
+  scroll-behavior: smooth;
+}
+@font-face {
+font-family: "JUDUL";
+src: url(../../Font/Glaser\ Stencil\ D\ Regular.ttf)
+}
+@font-face {
+font-family: "Poppins";
+src: url(../../Font/Poppins-Regular.ttf);
+}
+@font-face {
+font-family: "Montserrat";
+src: url(../../Font/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+font-family: "Nunito";
+src: url(../../Font/Nunito-Regular.ttf);
+}
+
+body {
+  background: #001F3F;
+}
+
+table{
+  width: 100%;
+}
+
+.navbar{
+  position: fixed;
+  height: 80px;
+  background-color: #ffd700;
+  align-items: center;
+  text-align: center;
+  z-index: 999;
+  border: none;
+  /* display: flex; */
+  justify-content: center;
+}
+.navbar a{
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #001F3F;
+  text-decoration: none;
+  line-height: 80px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  font-family: "Poppins";
+}
+.navbar .judul {
+  display: flex;
+  align-items: center;
+}
+.navbar .judul img {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+.navbar .judul span{
+  font-size: 50px;
+  font-family: "JUDUL";
+  color: #104DE4;
+}
+
+.navbar .navRight img,
+.navbar .navRight span {
+  vertical-align: middle;
+}
+
+.navbar .navRight .icon1 {
+  display: inline-block;
+  margin-right: 0px; /* Sesuaikan margin sesuai kebutuhan */
+}
+.navbar .navRight .icon2 {
+  display: inline-block;
+  margin-right: 0px; /* Sesuaikan margin sesuai kebutuhan */
+}
+
+/* Garis NavBar */
+
+.navbar .space{
+  width: 10%;
+}
+
+/* .navbar .brand{
+  border-bottom: 10px solid #ffffff;
+} */
+.navbar .home{
+  border-bottom: 10px solid #ffffff;
+}
+/* .navbar .collection{
+  border-bottom: 10px solid #ffffff;
+} */
+/* .navbar .about{
+  border-bottom: 10px solid #ffffff;
+} */
+/* .navbar .shop{
+  border-bottom: 10px solid #ffffff;
+} */
+/* .navbar .akun{
+  border-bottom: 10px solid #ffffff;
+} */
+
+/* Garis NavBar */
+
+  
+/* Sinopsis */
+.judulSinopsis {
+  position: absolute;
+  top: 100px;
+  left: 30px;
+  font-size: 40px;
+  font-family: "Poppins";
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.sinopsis{
+  position: absolute;
+  top: 160px;
+  left: 30px;
+  font-size: 20px ;
+  font-family: "Montserrat";
+  font-weight: normal;
+  color: #ffffff;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.SliderContainer{
+  padding: 2rem;
+}
+.slider-wrapper{
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+.slider{
+  display: flex;
+  aspect-ratio: 1800  / 600;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3rem -0.75rem rgba(0, 0, 0, .25);
+  border-radius: 0.25rem;
+}
+.slider img{
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+.slider-nav{
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.slider-nav > a{
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
+.slider-nav > a:hover{
+  opacity: 1;
+}
+
+html {
+  overflow:   scroll;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.subTitle{
+  font-family: "Poppins";
+  font-size: 36px;
+  font-weight: bolder;
+  color: #ffffff;
+  margin-left: 6%;
+  margin-top: 2%;
+}
+
+.X-Scroll {
+  padding: 1rem;
+  /* background: #fff; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  border-radius: 8px;
+  max-width: 900px;
+  width: 85vw;
+  margin-top: 1%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+.X-Scroll
+.ScrollGambar{
+  display: flex;
+  gap: 40px;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+}
+.ScrollGambar > img{
+  scroll-snap-align: start;
+  height: 400px;
+  width: 300px;
+}
+
+/* Animasi Underline SubTitle */
+.underline {
+  display: inline-block;
+  position: relative;
+  color: #ffffff;
+}
+
+.underline:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+
+.underline:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+
+
+footer {
+  position: relative;
+  width: 100%;
+  max-height: 100vh;
+  padding-left: 10px;
+  line-height: 50px;
+  background: #ffd700;
+  color: #001F3F;
+  margin-top: 150px;
+  bottom: 0;
+}
+footer > div{
+  text-align: center;
+  font-family: "Nunito";
+  letter-spacing: 8px;
+  font-size: large;
+  font-weight: 500;
+}

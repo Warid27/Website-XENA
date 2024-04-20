@@ -1,0 +1,278 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+  font-family: "JUDUL";
+  src: url(../../Font/Glaser\ Stencil\ D\ Regular.ttf)
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(../../Font/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../../Font/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Nunito";
+  src: url(../../Font/Nunito-Regular.ttf);
+}
+
+body {
+    background: #001F3F;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: #ffd700;
+    font-size: 0;
+    align-items: center;
+    z-index: 100;
+}
+
+nav .judul {
+    display: flex;
+    align-items: center;
+}
+
+nav .judul img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+nav .judul span{
+    font-size: 50px;
+    font-family: "JUDUL";
+    color: #104DE4;
+}
+
+a.navRight img,
+a.navRight span {
+    vertical-align: middle;
+}
+
+a.navRight .icon1 {
+    display: inline-block;
+    margin-right: 0px; /* Sesuaikan margin sesuai kebutuhan */
+}
+a.navRight .icon2 {
+    display: inline-block;
+    margin-right: 0px; /* Sesuaikan margin sesuai kebutuhan */
+}
+
+nav a {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #001F3F;
+    text-decoration: none;
+    line-height: 80px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    display: inline-block;
+    font-family: "Poppins";
+}
+/* ANIMASI */
+nav .animation {
+    position: absolute;
+    height: 5%;
+    bottom: 0;
+    z-index: 0;
+    background-color: #ffffff;
+    transition: all .5s ease 0s;
+}
+a:nth-child(1){ /* XENA */
+    width: 16%;
+}
+nav a:nth-child(1):hover~.animation{                /* hover */
+    width: 16%;
+    left: 0;
+}
+
+a:nth-child(2){             /* Pemisah */
+    width: 16%;
+}
+nav a:nth-child(2):hover~.animation{   /* hover */
+	width: 100%;
+	left: 0%;
+}
+
+a:nth-child(3){ /* HOME */
+    width: 10%;
+}
+nav a:nth-child(3):hover~.animation{   /* hover */
+	width: 10%;
+	left: 32%;
+}
+a:nth-child(4){ /* COLLECTION */
+    width: 12%;
+}
+nav a:nth-child(4):hover~.animation{                /* hover */
+    width: 12%;
+    left: 42%;
+}
+a:nth-child(5){ /* ABOUT */
+    width: 10%
+}
+nav a:nth-child(5):hover~.animation{                /* hover */
+    width: 10%;
+    left: 54%;
+}
+
+a:nth-child(6){             /* Pemisah */
+    width: 18.5%;
+}
+
+a:nth-child(7){ /* SHOP */
+    width: 9%;
+}
+nav a:nth-child(7):hover~.animation{                /* hover */
+    width: 10%;
+    left: 82.5%;
+}
+a:nth-child(8){ /* ACCOUNT */
+    width: 10;
+}
+nav .start-home, a:nth-child(8):hover~.animation{                /* hover */
+    width: 10%;
+    left: 90.5%;
+}
+
+
+table {
+    /* background-color: #ffd700; */
+    margin-left: auto;
+    margin-right: auto;
+    /* top: 100px; */
+    top: 100px;
+    position: relative;
+    /* border: none; */
+    width: 90%;
+    height: 770px;
+    color: #ffffff;
+    }
+.space{
+    height: 75px;
+}
+.kiri{
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 50.2%;
+    background-color: #ffffff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.kanan{
+    top: 0;
+    right: 0;
+    position: absolute;
+    height: 100%;
+    width: 50.2%;
+    background-color: #ffd700;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.Sign{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+    top: 1.5%;
+    right: 2%;
+    color: #001F3F;
+    font-family: "Poppins";
+    font-weight: bold;
+    font-size: 20px;
+    background: none;
+    opacity: .5;
+    /* transition: all 1s ease; */
+}
+.Sign a{
+    color: #001F3F;
+    font-family: "Poppins";
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+.active{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background: #ffffff;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+    right: 11.5%;
+    top: 1.5%;
+    opacity: 1;
+}
+.active a{
+    color: #001F3F;
+    font-family: "Poppins";
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+.Sign:hover ~ .active a{
+    color: white;
+}
+
+
+.connect {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    border-radius: 10px;
+    background: #222222;
+    padding: 10px;
+}
+
+.connect img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50px;
+}
+
+.connect span{
+    font-size: 25px;
+    font-family: "Nunito";
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    line-height: 50px;
+    background: #ffd700;
+    color: #001F3F;
+}
+footer > div{
+    text-align: center;
+    font-family: "Nunito";
+    letter-spacing: 8px;
+    font-size: large;
+    font-weight: 500;
+}
